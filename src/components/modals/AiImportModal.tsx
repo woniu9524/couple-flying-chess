@@ -35,7 +35,7 @@ export function AiImportModal({ isOpen, themeName, onClose, onImport }: AiImport
   const prompt = useMemo(() => {
     const base = `# Role 
 你是一位深谙亲密关系心理学的“情侣游戏设计师”。你的专长是设计既能升温感情，又具有趣味性和互动性的飞行棋任务卡片。 
- 
+
  # Goal 
  请根据主题「${themeName}」生成 20 条可执行的飞行棋任务指令。 
  
@@ -47,7 +47,7 @@ export function AiImportModal({ isOpen, themeName, onClose, onImport }: AiImport
  5. **禁忌**：禁止出现编号、Emoji 表情、Markdown 格式、解释性文字。 
  
  # Output Format 
- 你必须且只能输出纯 JSON 字符串，不要包含 "```json" 或 "```" 包裹。 
+ 你必须且只能输出纯 JSON 字符串，不要包含 "\`\`\`json" 或 "\`\`\`" 包裹。 
  格式严格如下： 
  { 
    "tasks": [ 
